@@ -19,11 +19,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-public class StoseApplication extends SpringBootServletInitializer implements CommandLineRunner {
+public class StoseApplication implements CommandLineRunner {
 	
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(StoseApplication.class);
-		}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(StoseApplication.class, args);
